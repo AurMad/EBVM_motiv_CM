@@ -280,7 +280,7 @@ Source : [Anderson Institute](https://www.andersoninstitute.com/flat-earth/)
     - Exemple : *Une raquette et une balle coûtent à elles deux 1€10. La raquette coûte 1€ de plus que la balle. Combien coûte la balle ?*
  
 ::: aside
- Sur ce sujet: [Thinking fast and slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) de D. Kanheman, courte vidéo de vulgarisation en français par [Olivier Sibony](https://youtu.be/JGsUQdGX_qM?si=dMQr-x-5jFhl1VG6).
+ Sur ce sujet: [Thinking fast and slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) de D. Kanheman ; courte vidéo de vulgarisation en français par [Olivier Sibony](https://youtu.be/JGsUQdGX_qM?si=dMQr-x-5jFhl1VG6).
 :::
 
 ## Se convaincre de l'efficacité d'une thérapeutique inefficace...
@@ -349,7 +349,7 @@ Source : [Anderson Institute](https://www.andersoninstitute.com/flat-earth/)
 
 ::: {.fragment}
 
-```{r diagramme liens mammites réformes, engine = 'tikz'}
+```{r diagramme traitement COVID, engine = 'tikz'}
 \begin{tikzpicture}
 
 % Noeuds
