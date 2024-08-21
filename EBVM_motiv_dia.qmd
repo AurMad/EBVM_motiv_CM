@@ -1,0 +1,587 @@
+---
+title: "La médecine factuelle"
+subtitle: Motivations, définition.
+author: "Aurélien Madouasse"
+date: "2024-11-02"
+lang: fr
+format: 
+  revealjs:
+    incremental: true
+    slide-number: c/t
+    show-slide-number: all
+    theme: [simple, style_pres.scss]
+    width: 1050
+    height: 700
+    logo: figs/LOGO ONIRIS VetAgroBio RVB_grand.png
+title-slide-attributes:
+    data-background-image: "figs/cow_scientist_black_and_white.png"
+    data-background-size: contain
+    data-background-opacity: "0.03"
+---
+
+```{r setup}
+library(ggplot2)
+library(dagitty)
+library(ggdag)
+library(grid)
+```
+
+# A propos
+
+Ce document constitue le support d'un cours à destination des étudiants vétérinaires de 5$^{ème}$ année d'[Oniris VetAgroBio](https://www.oniris-nantes.fr/).
+
+Des informations complémentaires sont disponibles dans le document intitulé *Introduction à la médecine factuelle* rédigé avec Raphaël Guatteo et disponible à l'adresse suivante : <https://aurmad.github.io/medecine_factuelle/>.
+
+
+## Objectifs pédagogiques
+
+A l'issue de ce cours, vous devez être capables de :
+
+- justifier l'intérêt d'une approche factuelle pour répondre à une question clinique précise
+- définir *médecine factuelle* et lister les 5 étapes de la démarche
+- donner des exemples de facteurs qui contribuent à l'illusion de causalité
+- expliquer ce qu'est un biais cognitif
+- expliquer ce qu'est une valeur de p ($p-value$) dans le cadre d'un test d'hypothèse
+
+
+# 3 exemples pour comprendre les enjeux
+
+# La mort de George Washington
+
+![](figs/Life_of_George_Washington_Deathbed.jpg){fig-align="center"}
+
+Source : [Washington on his Deathbed](https://commons.wikimedia.org/wiki/File:Life_of_George_Washington,_Deathbed.jpg), J.B Stearns, 1851
+
+## La mort de George Washington
+
+:::aside
+Exemple tiré de [Trick or Treatment? Alternative Medicine on Trial](https://en.wikipedia.org/wiki/Trick_or_Treatment%3F)
+:::
+
+-   George Washington = premier président des Etats-Unis d'Amérique
+-   Le 13 décembre 1799 : 
+    - se réveille avec un mal de gorge,
+    - on lui pratique une saignée (1/3 de litre)
+- 14 décembre :
+  - saignée 1/2 L en début de matinée puis 1/2 L à 11h
+  - saignée 1 L dans l'après-midi, puis une autre (?) plus tard dans l'après-midi
+  - meurt dans la nuit
+- Volume total de sang prélevé estimé à ~ 2,5 L (82 oz)
+
+## La saignée, comment ça marche ?
+
+- Théorie grecque des humeurs^[Voir [Thomas (2014)](https://www.rcpe.ac.uk/sites/default/files/thomas_0.pdf)] :
+  - les maladies seraient dues à un déséquilibre dans les 4 humeurs : sang, lymphe, bile jaune, bile noire
+  - La saignée consistait à prélever du sang, probablement pour rééquilibrer les humeurs
+
+## La saignée, est-ce que ça marche ?
+
+- A probablement précipité la mort de George Washington, et celle de nombreux autres patients.
+- Indiquée pour certaines pathologies spécifiques (hémochromatose, maladie de Vasquez, porphyrie).
+- Procès contemporain de la mort de Washington sur l'efficacité de la saignée^[Davies, N.E., Davies, G.H., Sanders, E.D., 1983. William Cobbett, Benjamin Rush, and the Death of General Washington. JAMA 249, 912–915. <https://doi.org/10.1001/jama.1983.03330310042024>]
+  - Opposait un journaliste (W. Cobett) à un médecin (B. Rush)
+  - Rush a poursuivi Cobett pour diffamation
+  - Notamment, après examen des registres de décès de la ville de Philadelphie, Cobett avait noté une augmentation de mortalité associée aux saignées pratiquées par les collègues de Rush
+  - Rush a gagné son procès
+
+# Oscillococcinum
+
+![](figs/Oscillococcinum_0.png){fig-align="center"}
+
+Source : [Boiron](https://www.boiron.fr/nos-produits/nos-medicaments/oscillococcinum)
+
+## Oscillococcinum : un traitement homéopathique contre la grippe
+
+![](figs/Oscillococcinum.png) Source : [boiron.be](https://www.boiron.be/fr/nos-produits/nos-medicaments-homeopathiques-specialites/oscillococcinum), août 2024
+
+## Oscillococcinum : un traitement homéopathique contre la grippe
+
+![](figs/Oscillococcinum_1.png) Source : [boiron.be](https://www.boiron.be/fr/nos-produits/nos-medicaments-homeopathiques-specialites/oscillococcinum), août 2024
+
+## Principes de l'homéopathie
+
+-   Administration d'une substance qui induit les mêmes (*homéo-*) symptômes que la maladie qu'on souhaite combattre, **très fortement** diluée
+
+1.  Préparation d'une teinture mère à partir de cette substance
+2.  Dilution dans un solvant (eau ou alcool). Différents types de dilution dont CH (centésimales hahnemanniennes), K (korsakovienne)...
+3.  Dynamisation (= succussion)
+4.  +/- déshydratation $\rightarrow$ granules
+5.  Administration au patient
+
+## Oscillococcinum : comment ça marche ?
+
+-   Principe actif : extrait fluide peptoné de foie et de coeur d'*Anas barbariae* dynamisé à la 200e K
+
+-   K = dilution korsakovienne
+
+    -   1 K : diluer la teinture mère à 1% dans un flacon, agiter (= *dynamisation*), 
+    -   2 K : vider le flacon, remplir le flacon précédemment vidé avec du solvant, agiter,
+     -   3 K : vider le flacon, remplir le flacon précédemment vidé avec du solvant, agiter,
+    -   ...
+    -   200 K : vider le flacon, remplir le flacon avec du solvant, agiter.
+
+## Pourquoi le canard ?
+
+-   Joseph Roy[^2], médecin militaire pendant la première guerre mondiale :
+    - *observe* (?) au microscope un micro-organisme qui oscille rapidement, qu'il nomme oscillocoque,
+    -   dans le sang de patients atteints de la grippe,
+    -   puis dans le sang et les tumeurs de cancéreux,
+    -   puis finalement un peu partout,
+    -   choisit de faire une préparation homéopathique à base de foie et de cœur de canard 🤷
+
+[^2]: voir [cet article](https://www.afis.org/Oscillococcinum-Le-petit-canard-a-grandi) de l'AFIS sur l'histoire de l'Oscillococcinum
+
+## Oscillococcinum : est-ce que ça marche ?
+
+![](figs/Oscillococcinum_Cochrane.png){.absolute top=150}
+
+:::aside
+ [Revue systématique](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001957.pub6/full#0) publiée sur le site de la collaboration Cochrane.
+:::
+
+## Oscillococcinum : est-ce que ça marche ?
+
+- Authors' conclusions: 
+
+  - *There is insufficient good evidence to enable robust conclusions to be made about Oscillococcinum® in the prevention or treatment of influenza and influenza‐like illness. Our findings do not rule out the possibility that Oscillococcinum® could have a clinically useful treatment effect but, given the low quality of the eligible studies, the evidence is not compelling. There was no evidence of clinically important harms due to Oscillococcinum®.*
+
+- Ce qui veut dire :
+  - Il n'y a aucune indication que ce soit efficace.
+  - Les études étant de mauvaise qualité, on ne peut rien exclure.
+  - Si ça ne fait pas de bien, ça ne fait pas de mal non plus.
+
+:::aside
+ [Revue systématique](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001957.pub6/full#0) publiée sur le site de la collaboration Cochrane.
+:::
+
+## Oscillococcinum : est-ce que ça se vend(ait) ?
+
+![](figs/Oscillococcinum_ventes.png){width=70%}
+
+:::aside
+Source : [article du Figaro (2008)](https://www.lefigaro.fr/societes-francaises/2008/01/05/04010-20080105ARTFIG00401-le-jackpot-de-boiron-avec-l-oscillococcinum-.php)
+:::
+
+# Les vaccins à ARN contre le COVID-19
+
+![](figs/Coronavirus._SARS-CoV-2.png){fig-align="center" width=55%}
+
+:::aside
+Source : [Wikipedia](https://en.wikipedia.org/wiki/SARS-CoV-2)
+:::
+
+## Le COVID-19
+
+- Maladie due à l'infection par le SARS-Cov-2, émergence fin 2019 puis pandémie
+- 3ème cause de mortalité en France en 2020 (après cancers et maladies cardiovasculaires)^[Bulletin épidémiologique hebdomadaire, 14 décembre 2022, n°16 - série Covid-19. <https://www.santepubliquefrance.fr/import/bulletin-epidemiologique-hebdomadaire-14-decembre-2022-n-16-serie-covid-19>.] $\rightarrow$ 69 000 décès.
+
+## Les vaccins à ARN contre le COVID-19 : comment ça marche ?
+
+![](figs/COVID19_mRNA_vaccine.png){fig-align="center" width=57%}
+
+:::aside
+Source : [mRNA Covid-19 vaccines: Facts vs Fiction](https://www.phdnet.mpg.de/offspring/Covid-19_vaccines), M. E. Almeida Goes, 2021
+
+Voir aussi : <https://www.scientificamerican.com/article/a-visual-guide-to-the-sars-cov-2-coronavirus/>
+:::
+
+## Les vaccins à ARN contre le COVID-19 : est-ce que ça marche ?
+
+![](figs/COVID_vacc_lives_saved_1.png){width="55%"}
+![](figs/COVID_vacc_lives_saved_2.png){width="60%"}
+
+:::aside
+Source : <https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(24)00179-6/>
+:::
+
+## Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox...
+
+![](figs/COVID_vacc_lemonde_4.png){.absolute top=200}
+
+::: aside
+[Lien vers l'article du Monde.](https://www.lemonde.fr/police-justice/article/2021/07/24/attaques-contre-les-centres-de-vaccination-une-violence-politique-difficile-a-qualifier_6089376_1653578.html)
+:::
+
+## Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox...
+
+![](figs/COVID_vacc_lemonde_1.png){.absolute top=200}
+
+::: aside
+[Lien vers l'article du Monde.](https://www.lemonde.fr/les-decodeurs/article/2022/09/30/vaccins-contre-le-covid-19-une-nouvelle-vague-d-etudes-trompeuses_6143859_4355770.html)
+:::
+
+## Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox...
+
+![](figs/COVID_vacc_lemonde_2.png){.absolute top=200}
+
+::: aside
+[Lien vers l'article du Monde.](https://www.lemonde.fr/societe/article/2023/05/31/non-vaccines-contre-le-covid-au-tribunal-administratif-de-lyon-65-soignants-et-personnels-hospitaliers-demandent-l-annulation-de-leur-suspension_6175627_3224.html)
+:::
+
+## Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox...
+
+![](figs/COVID_vacc_lemonde_3.png){.absolute top=200}
+
+::: aside
+[Lien vers l'article du Monde.](https://www.lemonde.fr/societe/article/2023/10/02/antivax-les-v-v-ou-le-recit-d-une-derive-conspirationniste-contre-la-politique-sanitaire_6191929_3224.html)
+:::
+
+## Que retenir de ces 3 exemples ?
+
+- **Saignée** : 
+  - les plus grands spécialistes de leur époque précipitent la mort d'un des hommes les plus puissant d'un pays par le recours à une pratique médicale dangereuse.
+- **Oscillococcinum** : 
+    - des millions de français sont prêts à payer une somme non négligeable pour ingérer des billes de sucre pour le traitement des symptômes de la grippe.
+- **Vaccination SARS-Cov-2** : 
+    - un vaccin efficace contre une maladie contagieuse et léthale génère craintes et défiance chez une partie de la population.
+
+
+## Conséquences positives de l'utilisation de traitements inefficaces
+
+- Un traitement, quel qu'il soit, peut rassurer un patient / propriétaire inquiet.
+  - Par exemple : un placebo peut venir en remplacement d'un traitement antibiotique, parfois réclamé par le patient, si une infection bactérienne est peu probable ou si la probabilité de guérison spontanée est élevée.
+
+## Conséquences négatives de l'utilisation de traitements inefficaces
+
+- **Dangerosité inhérente de la pratique** : dans le cas de la saignée, mort de G. Washington et des autres saignés qui auraient survécu si on n'avait rien fait.
+- **Perte de chance** : quand le traitement inefficace se substitue à un traitement efficace existant.
+- **Impact économique** : pour la partie de l'économie consacrée à la production de traitements inefficaces.
+  - animaux de production : augmentation injustifiée des coûts de production.
+  - animaux de compagnie : coûts supportés par les propriétaires
+  - humains : coûts mutualisés par la sécurité sociale (remboursement de l'homéopathie)
+
+## Conséquences négatives de l'utilisation de traitements inefficaces
+
+- **Impact écologique** : quand la thérapeutique en question doit être prélevée dans le milieu naturel (défenses d'éléphant...)
+- **Contribution à la propagation de représentations fausses** : mémoire de l'eau, médecine quantique...
+
+# Traitements inefficaces ou dangereux : comment en arrive-t-on là ?
+
+![](figs/FlatEarth.jpg){fig-align="center" width="55%"}
+
+
+Source : [Anderson Institute](https://www.andersoninstitute.com/flat-earth/)
+
+
+## Connaissances / représentations fausses :
+
+- La santé vue comme un équilibre entre 4 humeurs
+- [Théorie des miasmes](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_miasmes)
+- [Principe de similitude](https://bvajournals.onlinelibrary.wiley.com/doi/full/10.1136/vr.104278) et [mémoire de l'eau](https://fr.wikipedia.org/wiki/M%C3%A9moire_de_l%27eau)
+- [Géobiologie](https://www.afis.org/La-geobiologie-une-pseudo-science-en-expansion) et [réseau de Hartmann](https://fr.wikipedia.org/wiki/R%C3%A9seau_Hartmann)
+- [Insufflation alvine](https://www.radiofrance.fr/franceculture/podcasts/la-methode-scientifique/histoire-de-la-reanimation-quand-la-medecine-donne-un-second-souffle-3149838)
+- [.](https://fr.wikipedia.org/wiki/Tychoscope)[.](https://www.youtube.com/watch?v=PkT7lu4eEvI).
+
+## Se convaincre de l'efficacité d'une thérapeutique inefficace...
+
+- Heuristiques et biais
+  - **Heuristique** : manière rapide et intuitive pour un cerveau humain de traiter une information, parfois incertaine, pour aboutir à un résultat ou une réponse
+  - **Biais cognitif** : de façon plus ou moins systématique, le cerveau humain produit une réponse erronée à un type de question.
+    - Exemple : *Une raquette et une balle coûtent à elles deux 1€10. La raquette coûte 1€ de plus que la balle. Combien coûte la balle ?*
+ 
+::: aside
+ Sur ce sujet: [Thinking fast and slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) de D. Kanheman, courte vidéo de vulgarisation en français par [Olivier Sibony](https://youtu.be/JGsUQdGX_qM?si=dMQr-x-5jFhl1VG6).
+:::
+
+## Se convaincre de l'efficacité d'une thérapeutique inefficace...
+
+- Illusion de causalité ([Matute et al., 2015](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.00888/full)) / [illusion de maîtrise](https://fr.wikipedia.org/wiki/Illusion_de_ma%C3%AEtrise)
+- Biais cognitifs associés à :
+  - Taux de guérison spontanée élevé
+  - Absence de comparaison du traitement à un traitement de référence
+  - Rareté de l'affection traitée ou de conséquences graves
+  - Absence d'effet secondaire du traitement ([Blanco et al., 2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084084))
+
+## Comment savoir ?
+
+- 2 questions :
+  - Quel est la plausibilité du mode d'action envisagé ?
+  - L'efficacité a-t-elle été évaluée ? $\rightarrow$ **Médecine factuelle**
+
+## Plausibilité - exemple de l'homéopathie
+
+- Le fait que le principe de similitude soit utilisé pour la conception de tous les traitements implique :
+  - qu'il existe un mécanisme d'action commun bien compris,
+  - la compréhension de ce mécanisme est mobilisée pour l'élaboration de nouveaux traitements.
+- La substance utilisée pour la fabrication de le teinture mère contient une information censée aider l'organisme à se défendre, mais... 
+- le principe actif est dilué au point que le traitement ne contient aucune molécule active.
+- Hypothèse de la mémoire de l'eau incompatible avec les théories physiques actuelles et jamais démontrée.
+- Au vu des connaissances scientifiques actuelles, on ne sait pas comment cela pourrait fonctionner.
+
+## Evaluer l'efficacité
+
+- Il se peut qu'un traitement fonctionne même si on ne comprend pas comment.
+- Plus souvent, les questions sont, pour une indication précise :
+  - quel type de traitement ? Médicamenteux, chirurgical...
+  - quelle molécule dans une classe thérapeutique ?
+  - quelle dose ?
+  - quelle durée ?
+
+## Evaluer l'efficacité
+
+- Les questions qu'on se pose sont de nature **causale**, par exemple : 
+  - est-ce que le traitement $A$ (molécule, forme galénique, dose, modalités d'administration...) **cause** la guérison ?
+  - est-ce que le facteur de risque $B$ **cause** la survenue de la maladie ?
+
+- Revient à se poser la question de ce qui se serait passé si à la place du traitement $A$, on avait administré un autre traitement de référence (placebo ou autre).
+
+- **$\Rightarrow$ Aucune évaluation possible sans comparaison !!!**
+
+- Problème fondamental de l'évaluation de la causalité : *un même individu ne peut pas à la fois recevoir un traitement et son alternative !*
+  - Il faut des dispositifs expérimentaux et méthodes d'analyse adaptés pour mettre en évidence une relation causale.
+
+
+## Les pièges de l'évaluation
+
+- Différence association statistique / effet causal
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Exemple de l'évaluation d'un traitement contre le COVID :
+  - On veut savoir si un traitement réduit la mortalité liée au COVID
+  - biais si l'allocation du traitement fonction de l'âge du patient.
+
+:::
+ 
+::: {.column width="40%"}
+
+::: {.fragment}
+
+```{r diagramme liens mammites réformes, engine = 'tikz'}
+\begin{tikzpicture}
+
+% Noeuds
+\node[draw] (age) at (0, 0) {Age};
+\node[draw] (traitement) at (4, 2) {Traitement};
+\node[draw] (mort) at (4, -2) {Mort du COVID};
+
+% flèches
+\draw[->, >=latex] (age) -- (traitement);
+\draw[->, >=latex] (age) -- (mort);
+\draw[->, >=latex] (traitement) -- (mort);
+
+\end{tikzpicture}
+```
+:::
+:::
+::::
+
+
+## Le paradoxe de Simpson
+
+- On compare 2 traitements contre le COVID-19 sur la base du taux de mortalité à l'issue du traitement.
+- On obtient le tableau suivant :
+
+```{r simulation of bovid19}
+#| include: false
+source("R/simul_bovid19.R")
+set.seed(42)
+bv19 <- bovid19(N = 1000)
+```
+
+::: fragment
+```{r table raw death rates}
+#| message: false
+knitr::kable(bv19 |> 
+  group_by(treat) |> 
+  summarise(
+    n_treat = length(treat),
+    n_death = sum(death_obs),
+    death_prop = round(sum(death_obs) / length(death_obs), 3)),
+  col.names = c("Traitement", "N traités", "N morts", "P mort"))
+```
+:::
+
+- On réanalyse les données, mais en tenant compte de l'âge des patients :
+
+::: fragment
+```{r table death rates stratified by age}
+#| message: false
+knitr::kable(bv19 |> 
+  mutate(age_cat = ifelse(age >= 5, "> 50", "< 50")) |> 
+  group_by(treat, age_cat) |> 
+  summarise(
+    n_treat = length(treat),
+    n_death = sum(death_obs),
+    death_prop = round(sum(death_obs) / length(death_obs), 3)) |> 
+    ungroup() |> 
+    arrange(age_cat, treat),
+  col.names = c("Traitement", "Age","N traités", "N morts", "P mort"))
+```
+:::
+
+## Le paradoxe de Simpson
+
+::::{.columns}
+
+:::{.column width="60%"}
+- Lorsqu'on analyse l'effet du traitement sur l'ensemble de l'échantillon, $A$ semble le plus efficace.
+- Lorsqu'on prend l'âge des patients en compte, $B$ semble le plus efficace.
+:::
+
+:::{.column width="40%"}
+![](figs/simpsons-paradox-1024x830.jpg){fig-width="50%"}
+[Source image](<https://analyticsindiamag.com/understanding-simpsons-paradox-and-its-impact-on-data-analytics/)
+:::
+
+::::
+
+- L'âge est un **facteur de confusion** : facteur qui agit à la fois sur l'exposition (ici traitement évalué) et sur la variable d'intérêt (ici mortalité).
+
+## Implication pour la conception d'études
+
+- Les conclusions d'une analyse statistique peuvent être différentes selon les variables prises en compte.
+  - Nécessité de bien poser les hypothèses biologiques en amont $\rightarrow$ synthèse bibliographique.
+  - Conception du protocole expérimental :
+    - bien recueillir les données  nécessaires selon les hypothèses
+    - utiliser un dispositif adapté à la question (comparaison, randomisation...)
+  - Utiliser des méthodes d'analyse appropriées.
+
+## Essais contrôlés randomisés
+
+- L'essai randomisé contrôlé^[En anglais : *randomized controlled trial* ou RCT.] est le dispositif expérimental le plus adapté à l'évaluation de traitements.
+
+- Principes :
+  - Comparaison d'au moins 2 traitements.
+  - Allocation des traitements comparés au hasard : garantit la comparabilité des groupes recevant les différents traitements.
+  - Idéalement, les participants (éleveurs / propriétaires), voire les expérimentateurs, ne savent pas quel est le traitement reçu.
+
+## Pourquoi différentes études donnent des résultats différents ?
+
+- Variabilité biologique, imprécision des mesures : les résultats peuvent varier d'une étude à l'autre.
+- Une valeur de $p$ inférieure à 0,05 est habituellement utilisée pour conclure à un effet significatif d'un traitement.
+
+- Qu'est-ce qu'une $p-value$ ? Illustration par un exemple.
+
+- On veut tester l'effet d'un aliment $A$ sur la production laitière de vaches.
+  - On compare les productions laitières de vaches recevant l'aliment $A$ à celles de vaches ne recevant pas cet aliment.
+  - On fait l'hypothèse qu'il n'y a pas de différence de production laitière entre les 2 groupes.
+  - La **p-value** pour l'effet de l'aliment $A$ est la *probabilité d'observer les valeurs mesurées dans notre étude s'il n'y avait effectivement pas de différence entre les groupes*.
+  
+## Pourquoi différentes études donnent des résultats différents ?
+
+- On définit habituellement un seuil ($\alpha$) en deçà duquel la différence est déclarée *significative*.
+
+::::{.columns}
+
+:::{.column with="60%"}
+
+- Quand $\alpha = 0,05$ : en l'absence de différence entre traitements, on va conclure à l'existence d'un effet significatif dans 5% des cas,
+- $\rightarrow$ probabilité de faux positif
+:::
+
+:::{.column with="40%"}
+
+```{r distribution normale}
+# Define the critical values for the 2.5% tails
+alpha <- 0.05
+lower_bound <- qnorm(alpha / 2)
+upper_bound <- qnorm(1 - alpha / 2)
+# Create the plot using stat_function
+ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+  stat_function(fun = dnorm, geom = "area", fill = "grey", alpha = 0.5,
+                xlim = c(-4, lower_bound)) +
+  stat_function(fun = dnorm, geom = "area", fill = "grey", alpha = 0.5,
+                xlim = c(upper_bound, 4)) +
+  stat_function(fun = dnorm) +
+  # Add dashed vertical lines at the critical values
+  geom_vline(xintercept = lower_bound, linetype = "dashed", color = "black") +
+  geom_vline(xintercept = upper_bound, linetype = "dashed", color = "black") +
+  # Add text annotations for the shaded areas
+  annotate("text", x = 0, y = dnorm(upper_bound) + 0.05,
+           label = "95%", size = 5, angle = 0) +
+  annotate("text", x = lower_bound - 0.8, y = dnorm(lower_bound) + 0.05,
+           label = "2,5%", size = 5, angle = 0, hjust = 0) +
+  annotate("text", x = upper_bound + 0.8, y = dnorm(upper_bound) + 0.05,
+           label = "2,5%", size = 5, angle = 0, hjust = 1) +
+  theme_minimal() +
+  theme(
+    axis.ticks = element_blank(),          # Remove ticks
+    axis.text = element_blank(),           # Remove axis text
+    axis.title = element_text(size = 16),
+    panel.grid = element_blank(),          # Remove grid lines
+    axis.line = element_line(arrow = grid::arrow(type = "closed",
+                                                 length = unit(0.3, "cm")))  # Add axis lines
+  ) +
+  xlab("Production laitière en l'absence de traitement") +
+  ylab("Densité")
+```
+:::
+
+::::
+
+- Autrement dit, en l'absence d'effet, si on refaisait 100 fois notre expérience on trouverait un effet significatif ~5 fois.
+- On sait que la littérature scientifique contient beaucoup de faux positifs.
+- Voir par exemple [Ioannidis, 2005](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.0020124); [Ritchie, 2020](https://en.wikipedia.org/wiki/Science_Fictions)
+
+## La médecine factuelle pour s'y retrouver
+
+- Qu'est-ce que la médecine factuelle :
+  - Traduction de *evidence-based medicine* = **EBM**.
+  - [Sackett (1996)](https://www.sciencedirect.com/science/article/pii/S0146000597800134) : **Evidence based medicine** *is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of the individual patient. It means integrating individual clinical expertise with the best available external clinical evidence from systematic research.* 
+  - En français : médecine factuelle, médecine fondée sur les preuves
+  - Objectif : apporter la meilleure réponse à une question clinique précise en trouvant puis en synthétisant les informations fiables disponibles.
+
+## La médecine factuelle - étapes
+
+- Démarche en 5 étapes :
+
+1.  Formuler une question précise
+2.  Trouver les meilleures données / informations pour répondre à cette question
+3.  Evaluer les information trouvées
+4.  Intégrer le résultat de l'évaluation à sa pratique
+5.  Evaluer la performance
+
+- En résumé : utilisation de la littérature scientifique pour répondre à une question clinique.
+- Plus de détails en TD
+
+## La médecine factuelle - exemple
+
+![](figs/bestBETsforVets.png){fig-align="center" width="55%"}
+
+::: aside
+Voir le site [BestBETs for Vets](https://bestbetsforvets.org/).
+:::
+
+## Médecine factuelle et compétences à enseigner
+
+::: {.nonincremental}
+- Macro-compétence listée dans le [référentiel](https://www.agreenium.fr/sites/default/files/referentiel_veto_-_decembre_2017-bd-vdef.pdf) d'activité professionnelle et de compétences à l'issue des études vétérinaires.
+:::
+
+![](figs\EBVM_referentiel.png)
+
+## Médecine factuelle et code de déontologie
+
+- [Code de déontologie vétérinaire](https://www.veterinaire.fr/system/files/files/2023-03/CNO%20VETOS%20-%20Code%20deontologie%20%20V1.pdf).
+
+- Sous-section 2 : Dispositions applicables à tous les vétérinaires
+  - Devoirs généraux du vétérinaire (et article [article R242-33](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030361197) du code rural et de la pêche maritime.)
+    - XII - *Le vétérinaire acquiert l’information scientifique nécessaire à son exercice professionnel, en tient compte dans l’accomplissement de sa mission, entretient et perfectionne ses connaissances.*
+  
+- Sous-section 3 : Dispositions propres à différents modes d’exercice
+  - Devoirs envers les clients (et article [R.242-48](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030361105) du code rural et de la pêche maritime.)
+    - II - *Il formule ses conseils et ses recommandations, compte tenu de leurs conséquences, avec toute la clarté nécessaire et donne toutes les explications utiles sur le diagnostic, sur la prophylaxie ou la thérapeutique instituée et sur la prescription établie, afin de recueillir le consentement éclairé de ses clients.*
+
+
+## Médecine factuelle - au-delà des exigences de formation et déontologiques
+
+- Essentiel de se poser les questions de :
+  - la validité des informations
+  - l'efficacité de sa pratique
+  
+- La médecine factuelle comme approche pour apporter les meilleures réponses possibles à des questions concrètes.
+
+## Pour aller plus loin
+
+:::{.nonincremental}
+- [Polycopié de cours](https://aurmad.github.io/medecine_factuelle/)
+- [Support de TD](https://aurmad.github.io/td_EBVM/td_EBVM.html)
+- [EBVM toolkit](https://knowledge.rcvs.org.uk/evidence-based-veterinary-medicine/ebvm-toolkit/) : boîte à outils pour aider les vétérinaires praticiens à mettre en oeuvre la démarche *médecine factuelle*. En anglais.
+- [BestBETs for Vets](https://bestbetsforvets.org/) : site mis en ligne par le *Centre for Evidence-based Veterinary Medicine* de l'université de Nottingham. Contient de nombreux exemples. En anglais.
+- [Collaboration Cochrane](https://www.cochrane.org/fr/evidence) : revues systématiques de bonne qualité sur des questions de médecine humaine.
+- [Avis de l'académie vétérinaire de France sur l'homéopathie.](https://academie-veterinaire-defrance.org/publications/avis-rapports-prises-de-position/avis-2021-3-sur-lhomeopathie-veterinaire)
+:::
+

@@ -1,0 +1,310 @@
+[
+  {
+    "objectID": "EBVM_motiv_dia.html#objectifs-pédagogiques",
+    "href": "EBVM_motiv_dia.html#objectifs-pédagogiques",
+    "title": "La médecine factuelle",
+    "section": "Objectifs pédagogiques",
+    "text": "Objectifs pédagogiques\nA l’issue de ce cours, vous devez être capables de :\n\njustifier l’intérêt d’une approche factuelle pour répondre à une question clinique précise\ndéfinir médecine factuelle et lister les 5 étapes de la démarche\ndonner des exemples de facteurs qui contribuent à l’illusion de causalité\nexpliquer ce qu’est un biais cognitif\nexpliquer ce qu’est une valeur de p (\\(p-value\\)) dans le cadre d’un test d’hypothèse"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-mort-de-george-washington-1",
+    "href": "EBVM_motiv_dia.html#la-mort-de-george-washington-1",
+    "title": "La médecine factuelle",
+    "section": "La mort de George Washington",
+    "text": "La mort de George Washington\n\n\nGeorge Washington = premier président des Etats-Unis d’Amérique\nLe 13 décembre 1799 :\n\nse réveille avec un mal de gorge,\non lui pratique une saignée (1/3 de litre)\n\n14 décembre :\n\nsaignée 1/2 L en début de matinée puis 1/2 L à 11h\nsaignée 1 L dans l’après-midi, puis une autre (?) plus tard dans l’après-midi\nmeurt dans la nuit\n\nVolume total de sang prélevé estimé à ~ 2,5 L (82 oz)\n\n\nExemple tiré de Trick or Treatment? Alternative Medicine on Trial"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-saignée-comment-ça-marche",
+    "href": "EBVM_motiv_dia.html#la-saignée-comment-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "La saignée, comment ça marche ?",
+    "text": "La saignée, comment ça marche ?\n\nThéorie grecque des humeurs1 :\n\nles maladies seraient dues à un déséquilibre dans les 4 humeurs : sang, lymphe, bile jaune, bile noire\nLa saignée consistait à prélever du sang, probablement pour rééquilibrer les humeurs\n\n\nVoir Thomas (2014)"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-saignée-est-ce-que-ça-marche",
+    "href": "EBVM_motiv_dia.html#la-saignée-est-ce-que-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "La saignée, est-ce que ça marche ?",
+    "text": "La saignée, est-ce que ça marche ?\n\nA probablement précipité la mort de George Washington, et celle de nombreux autres patients.\nIndiquée pour certaines pathologies spécifiques (hémochromatose, maladie de Vasquez, porphyrie).\nProcès contemporain de la mort de Washington sur l’efficacité de la saignée1\n\nOpposait un journaliste (W. Cobett) à un médecin (B. Rush)\nRush a poursuivi Cobett pour diffamation\nNotamment, après examen des registres de décès de la ville de Philadelphie, Cobett avait noté une augmentation de mortalité associée aux saignées pratiquées par les collègues de Rush\nRush a gagné son procès\n\n\nDavies, N.E., Davies, G.H., Sanders, E.D., 1983. William Cobbett, Benjamin Rush, and the Death of General Washington. JAMA 249, 912–915. https://doi.org/10.1001/jama.1983.03330310042024"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-un-traitement-homéopathique-contre-la-grippe",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-un-traitement-homéopathique-contre-la-grippe",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : un traitement homéopathique contre la grippe",
+    "text": "Oscillococcinum : un traitement homéopathique contre la grippe\n Source : boiron.be, août 2024"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-un-traitement-homéopathique-contre-la-grippe-1",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-un-traitement-homéopathique-contre-la-grippe-1",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : un traitement homéopathique contre la grippe",
+    "text": "Oscillococcinum : un traitement homéopathique contre la grippe\n Source : boiron.be, août 2024"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#principes-de-lhoméopathie",
+    "href": "EBVM_motiv_dia.html#principes-de-lhoméopathie",
+    "title": "La médecine factuelle",
+    "section": "Principes de l’homéopathie",
+    "text": "Principes de l’homéopathie\n\nAdministration d’une substance qui induit les mêmes (homéo-) symptômes que la maladie qu’on souhaite combattre, très fortement diluée\n\n\nPréparation d’une teinture mère à partir de cette substance\nDilution dans un solvant (eau ou alcool). Différents types de dilution dont CH (centésimales hahnemanniennes), K (korsakovienne)…\nDynamisation (= succussion)\n+/- déshydratation \\(\\rightarrow\\) granules\nAdministration au patient"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-comment-ça-marche",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-comment-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : comment ça marche ?",
+    "text": "Oscillococcinum : comment ça marche ?\n\nPrincipe actif : extrait fluide peptoné de foie et de coeur d’Anas barbariae dynamisé à la 200e K\nK = dilution korsakovienne\n\n1 K : diluer la teinture mère à 1% dans un flacon, agiter (= dynamisation),\n2 K : vider le flacon, remplir le flacon précédemment vidé avec du solvant, agiter,\n3 K : vider le flacon, remplir le flacon précédemment vidé avec du solvant, agiter,\n…\n200 K : vider le flacon, remplir le flacon avec du solvant, agiter."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#pourquoi-le-canard",
+    "href": "EBVM_motiv_dia.html#pourquoi-le-canard",
+    "title": "La médecine factuelle",
+    "section": "Pourquoi le canard ?",
+    "text": "Pourquoi le canard ?\n\nJoseph Roy1, médecin militaire pendant la première guerre mondiale :\n\nobserve (?) au microscope un micro-organisme qui oscille rapidement, qu’il nomme oscillocoque,\ndans le sang de patients atteints de la grippe,\npuis dans le sang et les tumeurs de cancéreux,\npuis finalement un peu partout,\nchoisit de faire une préparation homéopathique à base de foie et de cœur de canard 🤷\n\n\nvoir cet article de l’AFIS sur l’histoire de l’Oscillococcinum"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-marche",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : est-ce que ça marche ?",
+    "text": "Oscillococcinum : est-ce que ça marche ?\n\n\n\nRevue systématique publiée sur le site de la collaboration Cochrane."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-marche-1",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-marche-1",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : est-ce que ça marche ?",
+    "text": "Oscillococcinum : est-ce que ça marche ?\n\nAuthors’ conclusions:\n\nThere is insufficient good evidence to enable robust conclusions to be made about Oscillococcinum® in the prevention or treatment of influenza and influenza‐like illness. Our findings do not rule out the possibility that Oscillococcinum® could have a clinically useful treatment effect but, given the low quality of the eligible studies, the evidence is not compelling. There was no evidence of clinically important harms due to Oscillococcinum®.\n\nCe qui veut dire :\n\nIl n’y a aucune indication que ce soit efficace.\nLes études étant de mauvaise qualité, on ne peut rien exclure.\nSi ça ne fait pas de bien, ça ne fait pas de mal non plus.\n\n\n\n\nRevue systématique publiée sur le site de la collaboration Cochrane."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-se-vendait",
+    "href": "EBVM_motiv_dia.html#oscillococcinum-est-ce-que-ça-se-vendait",
+    "title": "La médecine factuelle",
+    "section": "Oscillococcinum : est-ce que ça se vend(ait) ?",
+    "text": "Oscillococcinum : est-ce que ça se vend(ait) ?\n\n\n\nSource : article du Figaro (2008)"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#le-covid-19",
+    "href": "EBVM_motiv_dia.html#le-covid-19",
+    "title": "La médecine factuelle",
+    "section": "Le COVID-19",
+    "text": "Le COVID-19\n\nMaladie due à l’infection par le SARS-Cov-2, émergence fin 2019 puis pandémie\n3ème cause de mortalité en France en 2020 (après cancers et maladies cardiovasculaires)1 \\(\\rightarrow\\) 69 000 décès.\n\nBulletin épidémiologique hebdomadaire, 14 décembre 2022, n°16 - série Covid-19. https://www.santepubliquefrance.fr/import/bulletin-epidemiologique-hebdomadaire-14-decembre-2022-n-16-serie-covid-19."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-comment-ça-marche",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-comment-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : comment ça marche ?",
+    "text": "Les vaccins à ARN contre le COVID-19 : comment ça marche ?\n\n\n\n\n\n\n\nSource : mRNA Covid-19 vaccines: Facts vs Fiction, M. E. Almeida Goes, 2021\nVoir aussi : https://www.scientificamerican.com/article/a-visual-guide-to-the-sars-cov-2-coronavirus/"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-est-ce-que-ça-marche",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-est-ce-que-ça-marche",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : est-ce que ça marche ?",
+    "text": "Les vaccins à ARN contre le COVID-19 : est-ce que ça marche ?\n \n\n\nSource : https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(24)00179-6/"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…",
+    "text": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…\n\n\n\nLien vers l’article du Monde."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-1",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-1",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…",
+    "text": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…\n\n\n\nLien vers l’article du Monde."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-2",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-2",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…",
+    "text": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…\n\n\n\nLien vers l’article du Monde."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-3",
+    "href": "EBVM_motiv_dia.html#les-vaccins-à-arn-contre-le-covid-19-méfiance-peur-intox-3",
+    "title": "La médecine factuelle",
+    "section": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…",
+    "text": "Les vaccins à ARN contre le COVID-19 : méfiance, peur, intox…\n\n\n\nLien vers l’article du Monde."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#que-retenir-de-ces-3-exemples",
+    "href": "EBVM_motiv_dia.html#que-retenir-de-ces-3-exemples",
+    "title": "La médecine factuelle",
+    "section": "Que retenir de ces 3 exemples ?",
+    "text": "Que retenir de ces 3 exemples ?\n\nSaignée :\n\nles plus grands spécialistes de leur époque précipitent la mort d’un des hommes les plus puissant d’un pays par le recours à une pratique médicale dangereuse.\n\nOscillococcinum :\n\ndes millions de français sont prêts à payer une somme non négligeable pour ingérer des billes de sucre pour le traitement des symptômes de la grippe.\n\nVaccination SARS-Cov-2 :\n\nun vaccin efficace contre une maladie contagieuse et léthale génère craintes et défiance chez une partie de la population."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#conséquences-positives-de-lutilisation-de-traitements-inefficaces",
+    "href": "EBVM_motiv_dia.html#conséquences-positives-de-lutilisation-de-traitements-inefficaces",
+    "title": "La médecine factuelle",
+    "section": "Conséquences positives de l’utilisation de traitements inefficaces",
+    "text": "Conséquences positives de l’utilisation de traitements inefficaces\n\nUn traitement, quel qu’il soit, peut rassurer un patient / propriétaire inquiet.\n\nPar exemple : un placebo peut venir en remplacement d’un traitement antibiotique, parfois réclamé par le patient, si une infection bactérienne est peu probable ou si la probabilité de guérison spontanée est élevée."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#conséquences-négatives-de-lutilisation-de-traitements-inefficaces",
+    "href": "EBVM_motiv_dia.html#conséquences-négatives-de-lutilisation-de-traitements-inefficaces",
+    "title": "La médecine factuelle",
+    "section": "Conséquences négatives de l’utilisation de traitements inefficaces",
+    "text": "Conséquences négatives de l’utilisation de traitements inefficaces\n\nDangerosité inhérente de la pratique : dans le cas de la saignée, mort de G. Washington et des autres saignés qui auraient survécu si on n’avait rien fait.\nPerte de chance : quand le traitement inefficace se substitue à un traitement efficace existant.\nImpact économique : pour la partie de l’économie consacrée à la production de traitements inefficaces.\n\nanimaux de production : augmentation injustifiée des coûts de production.\nanimaux de compagnie : coûts supportés par les propriétaires\nhumains : coûts mutualisés par la sécurité sociale (remboursement de l’homéopathie)"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#conséquences-négatives-de-lutilisation-de-traitements-inefficaces-1",
+    "href": "EBVM_motiv_dia.html#conséquences-négatives-de-lutilisation-de-traitements-inefficaces-1",
+    "title": "La médecine factuelle",
+    "section": "Conséquences négatives de l’utilisation de traitements inefficaces",
+    "text": "Conséquences négatives de l’utilisation de traitements inefficaces\n\nImpact écologique : quand la thérapeutique en question doit être prélevée dans le milieu naturel (défenses d’éléphant…)\nContribution à la propagation de représentations fausses : mémoire de l’eau, médecine quantique…"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#connaissances-représentations-fausses",
+    "href": "EBVM_motiv_dia.html#connaissances-représentations-fausses",
+    "title": "La médecine factuelle",
+    "section": "Connaissances / représentations fausses :",
+    "text": "Connaissances / représentations fausses :\n\nLa santé vue comme un équilibre entre 4 humeurs\nThéorie des miasmes\nPrincipe de similitude et mémoire de l’eau\nGéobiologie et réseau de Hartmann\nInsufflation alvine\n..."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#se-convaincre-de-lefficacité-dune-thérapeutique-inefficace",
+    "href": "EBVM_motiv_dia.html#se-convaincre-de-lefficacité-dune-thérapeutique-inefficace",
+    "title": "La médecine factuelle",
+    "section": "Se convaincre de l’efficacité d’une thérapeutique inefficace…",
+    "text": "Se convaincre de l’efficacité d’une thérapeutique inefficace…\n\nHeuristiques et biais\n\nHeuristique : manière rapide et intuitive pour un cerveau humain de traiter une information, parfois incertaine, pour aboutir à un résultat ou une réponse\nBiais cognitif : de façon plus ou moins systématique, le cerveau humain produit une réponse erronée à un type de question.\n\nExemple : Une raquette et une balle coûtent à elles deux 1€10. La raquette coûte 1€ de plus que la balle. Combien coûte la balle ?\n\n\n\n\n\nSur ce sujet: Thinking fast and slow de D. Kanheman, courte vidéo de vulgarisation en français par Olivier Sibony."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#se-convaincre-de-lefficacité-dune-thérapeutique-inefficace-1",
+    "href": "EBVM_motiv_dia.html#se-convaincre-de-lefficacité-dune-thérapeutique-inefficace-1",
+    "title": "La médecine factuelle",
+    "section": "Se convaincre de l’efficacité d’une thérapeutique inefficace…",
+    "text": "Se convaincre de l’efficacité d’une thérapeutique inefficace…\n\nIllusion de causalité (Matute et al., 2015) / illusion de maîtrise\nBiais cognitifs associés à :\n\nTaux de guérison spontanée élevé\nAbsence de comparaison du traitement à un traitement de référence\nRareté de l’affection traitée ou de conséquences graves\nAbsence d’effet secondaire du traitement (Blanco et al., 2014)"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#comment-savoir",
+    "href": "EBVM_motiv_dia.html#comment-savoir",
+    "title": "La médecine factuelle",
+    "section": "Comment savoir ?",
+    "text": "Comment savoir ?\n\n2 questions :\n\nQuel est la plausibilité du mode d’action envisagé ?\nL’efficacité a-t-elle été évaluée ? \\(\\rightarrow\\) Médecine factuelle"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#plausibilité---exemple-de-lhoméopathie",
+    "href": "EBVM_motiv_dia.html#plausibilité---exemple-de-lhoméopathie",
+    "title": "La médecine factuelle",
+    "section": "Plausibilité - exemple de l’homéopathie",
+    "text": "Plausibilité - exemple de l’homéopathie\n\nLe fait que le principe de similitude soit utilisé pour la conception de tous les traitements implique :\n\nqu’il existe un mécanisme d’action commun bien compris,\nla compréhension de ce mécanisme est mobilisée pour l’élaboration de nouveaux traitements.\n\nLa substance utilisée pour la fabrication de le teinture mère contient une information censée aider l’organisme à se défendre, mais…\nle principe actif est dilué au point que le traitement ne contient aucune molécule active.\nHypothèse de la mémoire de l’eau incompatible avec les théories physiques actuelles et jamais démontrée.\nAu vu des connaissances scientifiques actuelles, on ne sait pas comment cela pourrait fonctionner."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#evaluer-lefficacité",
+    "href": "EBVM_motiv_dia.html#evaluer-lefficacité",
+    "title": "La médecine factuelle",
+    "section": "Evaluer l’efficacité",
+    "text": "Evaluer l’efficacité\n\nIl se peut qu’un traitement fonctionne même si on ne comprend pas comment.\nPlus souvent, les questions sont, pour une indication précise :\n\nquel type de traitement ? Médicamenteux, chirurgical…\nquelle molécule dans une classe thérapeutique ?\nquelle dose ?\nquelle durée ?"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#evaluer-lefficacité-1",
+    "href": "EBVM_motiv_dia.html#evaluer-lefficacité-1",
+    "title": "La médecine factuelle",
+    "section": "Evaluer l’efficacité",
+    "text": "Evaluer l’efficacité\n\nLes questions qu’on se pose sont de nature causale, par exemple :\n\nest-ce que le traitement \\(A\\) (molécule, forme galénique, dose, modalités d’administration…) cause la guérison ?\nest-ce que le facteur de risque \\(B\\) cause la survenue de la maladie ?\n\nRevient à se poser la question de ce qui se serait passé si à la place du traitement \\(A\\), on avait administré un autre traitement de référence (placebo ou autre).\n\\(\\Rightarrow\\) Aucune évaluation possible sans comparaison !!!\nProblème fondamental de l’évaluation de la causalité : un même individu ne peut pas à la fois recevoir un traitement et son alternative !\n\nIl faut des dispositifs expérimentaux et méthodes d’analyse adaptés pour mettre en évidence une relation causale."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#les-pièges-de-lévaluation",
+    "href": "EBVM_motiv_dia.html#les-pièges-de-lévaluation",
+    "title": "La médecine factuelle",
+    "section": "Les pièges de l’évaluation",
+    "text": "Les pièges de l’évaluation\n\nDifférence association statistique / effet causal\n\n\n\n\nExemple de l’évaluation d’un traitement contre le COVID :\n\nOn veut savoir si un traitement réduit la mortalité liée au COVID\nbiais si l’allocation du traitement fonction de l’âge du patient."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#le-paradoxe-de-simpson",
+    "href": "EBVM_motiv_dia.html#le-paradoxe-de-simpson",
+    "title": "La médecine factuelle",
+    "section": "Le paradoxe de Simpson",
+    "text": "Le paradoxe de Simpson\n\nOn compare 2 traitements contre le COVID-19 sur la base du taux de mortalité à l’issue du traitement.\nOn obtient le tableau suivant :\n\n\n\n\n\n\n\nTraitement\nN traités\nN morts\nP mort\n\n\n\n\nA\n370\n145\n0.392\n\n\nB\n630\n266\n0.422\n\n\n\n\n\n\n\nOn réanalyse les données, mais en tenant compte de l’âge des patients :\n\n\n\n\n\n\n\nTraitement\nAge\nN traités\nN morts\nP mort\n\n\n\n\nA\n&lt; 50\n93\n4\n0.043\n\n\nB\n&lt; 50\n26\n0\n0.000\n\n\nA\n&gt; 50\n277\n141\n0.509\n\n\nB\n&gt; 50\n604\n266\n0.440"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#le-paradoxe-de-simpson-1",
+    "href": "EBVM_motiv_dia.html#le-paradoxe-de-simpson-1",
+    "title": "La médecine factuelle",
+    "section": "Le paradoxe de Simpson",
+    "text": "Le paradoxe de Simpson\n\n\n\nLorsqu’on analyse l’effet du traitement sur l’ensemble de l’échantillon, \\(A\\) semble le plus efficace.\nLorsqu’on prend l’âge des patients en compte, \\(B\\) semble le plus efficace.\n\n\n Source image\n\n\nL’âge est un facteur de confusion : facteur qui agit à la fois sur l’exposition (ici traitement évalué) et sur la variable d’intérêt (ici mortalité)."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#implication-pour-la-conception-détudes",
+    "href": "EBVM_motiv_dia.html#implication-pour-la-conception-détudes",
+    "title": "La médecine factuelle",
+    "section": "Implication pour la conception d’études",
+    "text": "Implication pour la conception d’études\n\nLes conclusions d’une analyse statistique peuvent être différentes selon les variables prises en compte.\n\nNécessité de bien poser les hypothèses biologiques en amont \\(\\rightarrow\\) synthèse bibliographique.\nConception du protocole expérimental :\n\nbien recueillir les données nécessaires selon les hypothèses\nutiliser un dispositif adapté à la question (comparaison, randomisation…)\n\nUtiliser des méthodes d’analyse appropriées."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#essais-contrôlés-randomisés",
+    "href": "EBVM_motiv_dia.html#essais-contrôlés-randomisés",
+    "title": "La médecine factuelle",
+    "section": "Essais contrôlés randomisés",
+    "text": "Essais contrôlés randomisés\n\nL’essai randomisé contrôlé1 est le dispositif expérimental le plus adapté à l’évaluation de traitements.\nPrincipes :\n\nComparaison d’au moins 2 traitements.\nAllocation des traitements comparés au hasard : garantit la comparabilité des groupes recevant les différents traitements.\nIdéalement, les participants (éleveurs / propriétaires), voire les expérimentateurs, ne savent pas quel est le traitement reçu.\n\n\nEn anglais : randomized controlled trial ou RCT."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#pourquoi-différentes-études-donnent-des-résultats-différents",
+    "href": "EBVM_motiv_dia.html#pourquoi-différentes-études-donnent-des-résultats-différents",
+    "title": "La médecine factuelle",
+    "section": "Pourquoi différentes études donnent des résultats différents ?",
+    "text": "Pourquoi différentes études donnent des résultats différents ?\n\nVariabilité biologique, imprécision des mesures : les résultats peuvent varier d’une étude à l’autre.\nUne valeur de \\(p\\) inférieure à 0,05 est habituellement utilisée pour conclure à un effet significatif d’un traitement.\nQu’est-ce qu’une \\(p-value\\) ? Illustration par un exemple.\nOn veut tester l’effet d’un aliment \\(A\\) sur la production laitière de vaches.\n\nOn compare les productions laitières de vaches recevant l’aliment \\(A\\) à celles de vaches ne recevant pas cet aliment.\nOn fait l’hypothèse qu’il n’y a pas de différence de production laitière entre les 2 groupes.\nLa p-value pour l’effet de l’aliment \\(A\\) est la probabilité d’observer les valeurs mesurées dans notre étude s’il n’y avait effectivement pas de différence entre les groupes."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#pourquoi-différentes-études-donnent-des-résultats-différents-1",
+    "href": "EBVM_motiv_dia.html#pourquoi-différentes-études-donnent-des-résultats-différents-1",
+    "title": "La médecine factuelle",
+    "section": "Pourquoi différentes études donnent des résultats différents ?",
+    "text": "Pourquoi différentes études donnent des résultats différents ?\n\nOn définit habituellement un seuil (\\(\\alpha\\)) en deçà duquel la différence est déclarée significative.\n\n\n\n\nQuand \\(\\alpha = 0,05\\) : en l’absence de différence entre traitements, on va conclure à l’existence d’un effet significatif dans 5% des cas,\n\\(\\rightarrow\\) probabilité de faux positif\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutrement dit, en l’absence d’effet, si on refaisait 100 fois notre expérience on trouverait un effet significatif ~5 fois.\nOn sait que la littérature scientifique contient beaucoup de faux positifs.\nVoir par exemple Ioannidis, 2005; Ritchie, 2020"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-médecine-factuelle-pour-sy-retrouver",
+    "href": "EBVM_motiv_dia.html#la-médecine-factuelle-pour-sy-retrouver",
+    "title": "La médecine factuelle",
+    "section": "La médecine factuelle pour s’y retrouver",
+    "text": "La médecine factuelle pour s’y retrouver\n\nQu’est-ce que la médecine factuelle :\n\nTraduction de evidence-based medicine = EBM.\nSackett (1996) : Evidence based medicine is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of the individual patient. It means integrating individual clinical expertise with the best available external clinical evidence from systematic research.\nEn français : médecine factuelle, médecine fondée sur les preuves\nObjectif : apporter la meilleure réponse à une question clinique précise en trouvant puis en synthétisant les informations fiables disponibles."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-médecine-factuelle---étapes",
+    "href": "EBVM_motiv_dia.html#la-médecine-factuelle---étapes",
+    "title": "La médecine factuelle",
+    "section": "La médecine factuelle - étapes",
+    "text": "La médecine factuelle - étapes\n\nDémarche en 5 étapes :\n\n\nFormuler une question précise\nTrouver les meilleures données / informations pour répondre à cette question\nEvaluer les information trouvées\nIntégrer le résultat de l’évaluation à sa pratique\nEvaluer la performance\n\n\nEn résumé : utilisation de la littérature scientifique pour répondre à une question clinique.\nPlus de détails en TD"
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#la-médecine-factuelle---exemple",
+    "href": "EBVM_motiv_dia.html#la-médecine-factuelle---exemple",
+    "title": "La médecine factuelle",
+    "section": "La médecine factuelle - exemple",
+    "text": "La médecine factuelle - exemple\n\n\n\n\n\n\n\nVoir le site BestBETs for Vets."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#médecine-factuelle-et-compétences-à-enseigner",
+    "href": "EBVM_motiv_dia.html#médecine-factuelle-et-compétences-à-enseigner",
+    "title": "La médecine factuelle",
+    "section": "Médecine factuelle et compétences à enseigner",
+    "text": "Médecine factuelle et compétences à enseigner\n\n\nMacro-compétence listée dans le référentiel d’activité professionnelle et de compétences à l’issue des études vétérinaires."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#médecine-factuelle-et-code-de-déontologie",
+    "href": "EBVM_motiv_dia.html#médecine-factuelle-et-code-de-déontologie",
+    "title": "La médecine factuelle",
+    "section": "Médecine factuelle et code de déontologie",
+    "text": "Médecine factuelle et code de déontologie\n\nCode de déontologie vétérinaire.\nSous-section 2 : Dispositions applicables à tous les vétérinaires\n\nDevoirs généraux du vétérinaire (et article article R242-33 du code rural et de la pêche maritime.)\n\nXII - Le vétérinaire acquiert l’information scientifique nécessaire à son exercice professionnel, en tient compte dans l’accomplissement de sa mission, entretient et perfectionne ses connaissances.\n\n\nSous-section 3 : Dispositions propres à différents modes d’exercice\n\nDevoirs envers les clients (et article R.242-48 du code rural et de la pêche maritime.)\n\nII - Il formule ses conseils et ses recommandations, compte tenu de leurs conséquences, avec toute la clarté nécessaire et donne toutes les explications utiles sur le diagnostic, sur la prophylaxie ou la thérapeutique instituée et sur la prescription établie, afin de recueillir le consentement éclairé de ses clients."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#médecine-factuelle---au-delà-des-exigences-de-formation-et-déontologiques",
+    "href": "EBVM_motiv_dia.html#médecine-factuelle---au-delà-des-exigences-de-formation-et-déontologiques",
+    "title": "La médecine factuelle",
+    "section": "Médecine factuelle - au-delà des exigences de formation et déontologiques",
+    "text": "Médecine factuelle - au-delà des exigences de formation et déontologiques\n\nEssentiel de se poser les questions de :\n\nla validité des informations\nl’efficacité de sa pratique\n\nLa médecine factuelle comme approche pour apporter les meilleures réponses possibles à des questions concrètes."
+  },
+  {
+    "objectID": "EBVM_motiv_dia.html#pour-aller-plus-loin",
+    "href": "EBVM_motiv_dia.html#pour-aller-plus-loin",
+    "title": "La médecine factuelle",
+    "section": "Pour aller plus loin",
+    "text": "Pour aller plus loin\n\n\nPolycopié de cours\nSupport de TD\nEBVM toolkit : boîte à outils pour aider les vétérinaires praticiens à mettre en oeuvre la démarche médecine factuelle. En anglais.\nBestBETs for Vets : site mis en ligne par le Centre for Evidence-based Veterinary Medicine de l’université de Nottingham. Contient de nombreux exemples. En anglais.\nCollaboration Cochrane : revues systématiques de bonne qualité sur des questions de médecine humaine.\nAvis de l’académie vétérinaire de France sur l’homéopathie."
+  }
+]
