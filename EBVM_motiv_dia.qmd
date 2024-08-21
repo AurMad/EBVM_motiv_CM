@@ -2,7 +2,7 @@
 title: "La médecine factuelle"
 subtitle: Motivations, définition.
 author: "Aurélien Madouasse"
-date: "2024-11-02"
+date: "2024-09-02"
 lang: fr
 format: 
   revealjs:
